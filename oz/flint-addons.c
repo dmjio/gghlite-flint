@@ -37,7 +37,6 @@ void fmpz_mat_modp(fmpz_mat_t m, int dim, fmpz_t p) {
 
 // uses gaussian elimination to obtain the determinant of a matrix
 void fmpz_mat_det_modp(fmpz_t det, fmpz_mat_t a, int n, fmpz_t p) {
-  assert(n >= 1);
 
   if(n == 1) {
     fmpz_set(det, fmpz_mat_entry(a, 0, 0));
